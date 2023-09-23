@@ -10,7 +10,7 @@ const temperture = null
 let totalScore;
 const Biginterger = 534954257430954n
 
-console.log(typeof Biginterger);
+// console.log(typeof Biginterger);
 //reference  (Non-primitive)
 /**
  * Array, Objects, Functions
@@ -32,4 +32,29 @@ const testFun = function(){
 }
 
 
-console.log(typeof testFun);
+// console.log(typeof testFun);
+
+
+//=+++++++++++++++++++memory manage in js ====+++++++++++++++++++++++++++++++
+// two way to store variable in js 
+// stack() :-- All primitive data type store in stack system mean a copy of value
+//heap() :--  All non primitive data type always is heap system( reference of the value) 
+
+let myFavouriteSub = "math";
+let mohanFavouriteSub = myFavouriteSub
+
+mohanFavouriteSub = "science"
+console.log(myFavouriteSub);
+console.log(mohanFavouriteSub);
+
+const userOne = {
+    emailId:"abc@gmail.com",
+    name:"shivam"
+}
+
+const userTwo = userOne
+
+userTwo.emailId = "xyz@google.com"
+
+console.log(userOne.emailId);
+console.log(userTwo.emailId);
