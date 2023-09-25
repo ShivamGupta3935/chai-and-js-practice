@@ -29,5 +29,3 @@ console.log(events.getDate());
 events.setFullYear("2002")
 console.log(events.getFullYear());
 console.log(events.toDateString());
-const jsonDate = events.toJSON()
-console.log(jsonDate.to);
