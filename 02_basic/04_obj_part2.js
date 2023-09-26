@@ -47,3 +47,22 @@ console.log(newTinderUser);
 console.log(newTinderUser[0].fullname.userFullname.myfullname.middleName)
 console.log(newTinderUser[2].email)
 
+
+//destructuring
+const course = {
+    coursename: "js in hindi",
+    price: 500,
+    courseLearner:"shivam gupta"
+}
+
+const {courseLearner,price} = course;
+console.log(courseLearner);
+console.log(price);
+
+
+// //api json string
+// {
+//     "name":"shivam",
+//     "email":"gupta@gmail.com",
+//     "password":"123safs"
+// }
