@@ -29,3 +29,49 @@ function loginUserName(username){
 
 // console.log(loginUserName("shivam"))
 console.log(loginUserName("suraj"))
+
+// //rest aperator 
+// function calculateCartPrice(...num1){
+//        return num1;
+// }
+function calculateCartPrice(val1, val2, ...num1){
+       return num1;
+}
+
+// console.log(calculateCartPrice(200, 200,400,1000));
+
+//how we can pass object in function
+
+// method1
+const user = {
+    name:"shivam",
+    age: 34,
+    price:2345,
+    sub:"math"
+}
+
+function passObj(anyObject){
+      console.log(`The name of user ${anyObject.name} and age is ${anyObject.age}`);
+}
+
+passObj(user)
+
+//are direct pass object as argument
+passObj({
+    name:"suraj",
+    age:23,
+    sunname:"gupta"
+})
+
+
+// how to pass array in function
+const allUserName = ["suraj", "shivam","manish","parvesh","shubham"]
+
+function passArrayInFn(anyArray){
+      return anyArray[2]
+}
+
+console.log(passArrayInFn(allUserName));
+
+//direct pass array in function
+console.log(passArrayInFn([1, 3, 5, 6]));
