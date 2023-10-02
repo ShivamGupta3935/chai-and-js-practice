@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai and code timeout function</title>
+</head>
+<body>
+    <h1 >Chai and Code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // const sayHello = setTimeout(function(){
+    //     console.log("SHIVAM");
+    // },2000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "heading changed"
+    }
+
+    const changeMe = setTimeout(changeText,3000)
+
+    //clearTime out function
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("stopped");
+
+    })
+
+</script>
+</html>
