@@ -33,4 +33,10 @@ const user1 = new User("manish","manish@mail.com")
 
 user1.logMe()
 //not access
-user1.adCourse()
+// user1.adCourse()
+
+//cheque instances using instance of operator
+console.log(user1 instanceof User);
+console.log(user1 instanceof Teacher);
+console.log(student1 instanceof Teacher);
+console.log(student1 instanceof User);
